@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:picasso_diary/view/create_diary.dart';
 import 'package:picasso_diary/view/explore_view.dart';
+import 'package:picasso_diary/view/gallery.dart';
 
 class Navigation extends StatefulWidget {
   const Navigation({super.key});
@@ -28,18 +30,21 @@ class _NavigationState extends State<Navigation> {
             currentPageIndex = index;
           });
         },
-        destinations: const <Widget>[
-          NavigationDestination(
+        destinations: <Widget>[
+          const NavigationDestination(
             icon: Icon(Icons.explore),
             label: '탐색',
           ),
-          NavigationDestination(
+          const NavigationDestination(
             icon: Icon(Icons.calendar_month_outlined),
             label: '일기',
           ),
           NavigationDestination(
-            // selectedIcon: Icon(Icons.photo_size_select_actual_outlined),
-            icon: Icon(Icons.bookmark_border),
+            // icon: Icon(Icons.photo_size_select_actual_outlined),
+            icon: SvgPicture.asset(
+              'assets/icons/Vector.svg',
+              height: 25,
+            ),
             label: '미술관',
           ),
         ],
@@ -47,7 +52,7 @@ class _NavigationState extends State<Navigation> {
       body: [
         const ExploreView(),
         const CreateDiary(),
-        const ExploreView(),
+        const MyGallery(),
       ][currentPageIndex],
     );
   }

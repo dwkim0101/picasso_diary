@@ -12,7 +12,15 @@ class _ExploreViewState extends State<ExploreView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 0,
+        centerTitle: false,
+        title: const Text(
+          '당신의 순간들',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 25,
+          ),
+        ),
+        // toolbarHeight: 0,
         forceMaterialTransparency: true,
       ),
       body: const SingleChildScrollView(
@@ -20,20 +28,6 @@ class _ExploreViewState extends State<ExploreView> {
         padding: EdgeInsets.symmetric(horizontal: 15.0),
         child: Column(
           children: [
-            SizedBox(
-              height: 10,
-            ),
-            Row(
-              children: [
-                SizedBox(
-                  width: 10,
-                ),
-                Text(
-                  '당신의 순간들',
-                  style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
-                ),
-              ],
-            ),
             SizedBox(
               height: 10,
             ),
