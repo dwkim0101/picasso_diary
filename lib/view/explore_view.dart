@@ -1,26 +1,83 @@
 import 'package:flutter/material.dart';
 
-class exploreView extends StatefulWidget {
-  const exploreView({super.key});
+class ExploreView extends StatefulWidget {
+  const ExploreView({super.key});
 
   @override
-  State<exploreView> createState() => _exploreViewState();
+  State<ExploreView> createState() => _ExploreViewState();
 }
 
-class _exploreViewState extends State<exploreView> {
+class _ExploreViewState extends State<ExploreView> {
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
+    return Scaffold(
+      appBar: AppBar(
+        toolbarHeight: 0,
+        forceMaterialTransparency: true,
+      ),
+      body: const SingleChildScrollView(
+          child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 15.0),
         child: Column(
-      children: [
-        ElevatedCardExample(),
-        ElevatedCardExample(),
-        ElevatedCardExample(),
-        ElevatedCardExample(),
-        ElevatedCardExample(),
-        ElevatedCardExample(),
-      ],
-    ));
+          children: [
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              children: [
+                SizedBox(
+                  width: 10,
+                ),
+                Text(
+                  '당신의 순간들',
+                  style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                ElevatedCardExample(),
+                ElevatedCardExample(),
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                ElevatedCardExample(),
+                ElevatedCardExample(),
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                ElevatedCardExample(),
+                ElevatedCardExample(),
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                ElevatedCardExample(),
+                ElevatedCardExample(),
+              ],
+            ),
+          ],
+        ),
+      )),
+    );
   }
 }
 
@@ -36,7 +93,7 @@ class ElevatedCardExample extends StatelessWidget {
             debugPrint('Card tapped.');
           },
           child: const SizedBox(
-            width: 200,
+            width: 170,
             height: 200,
             child: Text('A card that can be tapped'),
           ),

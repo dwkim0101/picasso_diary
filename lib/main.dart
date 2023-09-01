@@ -19,8 +19,11 @@ class Home extends StatelessWidget {
       title: 'Picasso Diary',
       themeMode: ThemeMode.system,
       darkTheme: ThemeData.dark(useMaterial3: true),
+
       theme: ThemeData(
+        fontFamily: 'Noto_Serif_KR',
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        // colorSchemeSeed: Colors.green,
         useMaterial3: true,
       ),
       // home: const CreateDiary(title: 'Picasso Diary'),

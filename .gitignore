@@ -46,4 +46,4 @@ lib/firebase_options.dart
 ios/firebase_app_id_file.json
 .gitignore
 macos/firebase_app_id_file.json
-lib/view/create_diary.dart
+lib/util/request.dart

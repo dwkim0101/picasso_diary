@@ -38,6 +38,8 @@ dependencies:
   openai_dalle_wrapper: ^1.0.0
   firebase_core: ^2.15.1
   cloud_firestore: ^4.9.1
+  easy_date_timeline: ^0.1.0
+  google_fonts: ^4.0.4
 
 dev_dependencies:
   flutter_test:
@@ -88,6 +90,22 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
-  #
+  
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  fonts:
+  - family: Noto_Serif_KR
+    fonts:
+      - asset: assets/fonts/Noto_Serif_KR/NotoSerifKR-ExtraLight.otf
+        weight: 200
+      - asset: assets/fonts/Noto_Serif_KR/NotoSerifKR-Light.otf
+        weight: 300
+      - asset: assets/fonts/Noto_Serif_KR/NotoSerifKR-Regular.otf
+      - asset: assets/fonts/Noto_Serif_KR/NotoSerifKR-Medium.otf
+        weight: 500
+      - asset: assets/fonts/Noto_Serif_KR/NotoSerifKR-SemiBold.otf
+        weight: 600
+      - asset: assets/fonts/Noto_Serif_KR/NotoSerifKR-Bold.otf
+        weight: 700
+      - asset: assets/fonts/Noto_Serif_KR/NotoSerifKR-Black.otf
+        weight: 900

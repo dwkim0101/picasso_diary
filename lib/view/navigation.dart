@@ -38,16 +38,16 @@ class _NavigationState extends State<Navigation> {
             label: '일기',
           ),
           NavigationDestination(
-            selectedIcon: Icon(Icons.photo_size_select_actual_outlined),
+            // selectedIcon: Icon(Icons.photo_size_select_actual_outlined),
             icon: Icon(Icons.bookmark_border),
             label: '미술관',
           ),
         ],
       ),
       body: [
-        const exploreView(),
+        const ExploreView(),
         const CreateDiary(),
-        const exploreView(),
+        const ExploreView(),
       ][currentPageIndex],
     );
   }
