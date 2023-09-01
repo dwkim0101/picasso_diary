@@ -32,7 +32,7 @@ class _CreateDiaryState extends State<CreateDiary> {
 
   void dallEGenerater(String statement) async {
     var imagePath = await openAi.generateImage(
-        "A painting of a happy family went to the coast in Monet style");
+        "A painting of a happy family went to the coast in Picasso style");
     print(imagePath);
     setState(() {
       _src = imagePath;
