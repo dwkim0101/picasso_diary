@@ -68,6 +68,11 @@ flutter:
   assets:
     - assets/icons/Vector.svg
     - assets/imgs/img1.png
+    - assets/imgs/back2.jpeg
+    - assets/imgs/image 1.png
+    - assets/imgs/image 6.png
+    - assets/imgs/image 7.png
+    - assets/imgs/image 8.png
     # - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -26,6 +26,8 @@ class Home extends StatelessWidget {
         // colorSchemeSeed: Colors.green,
         useMaterial3: true,
       ),
+      debugShowCheckedModeBanner: false,
+
       // home: const CreateDiary(title: 'Picasso Diary'),
       home: const Navigation(),
     );

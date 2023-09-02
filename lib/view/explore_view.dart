@@ -86,10 +86,38 @@ class ElevatedCardExample extends StatelessWidget {
           onTap: () {
             debugPrint('Card tapped.');
           },
-          child: const SizedBox(
+          child: SizedBox(
             width: 170,
             height: 200,
-            child: Text('A card that can be tapped'),
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'Mar',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  Transform.translate(
+                    offset: const Offset(0, -5),
+                    child: const Text(
+                      '21',
+                      style: TextStyle(fontSize: 30),
+                    ),
+                  ),
+                  Transform.translate(
+                    offset: const Offset(30, -5),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(15.0),
+                      child: Image.asset(
+                        'assets/imgs/img1.png',
+                        height: 120,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
         ),
       ),
