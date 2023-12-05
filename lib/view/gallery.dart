@@ -46,7 +46,7 @@ class _MyGalleryState extends State<MyGallery> {
           'Art Museum',
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            color: Colors.white,
+            // color: Colors.white,
             // foreground: Paint()
             //   ..style = PaintingStyle.stroke
             //   ..strokeWidth = 6

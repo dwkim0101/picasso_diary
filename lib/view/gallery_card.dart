@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:picasso_diary/view/gallery_detail.dart';
 
 Widget buildRecipeCard({
   required String img,

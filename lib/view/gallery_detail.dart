@@ -13,15 +13,16 @@ class GalleryDetail extends StatelessWidget {
       ),
       body: const Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Column(
-              children: [
-                Text(
-                  'asd',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                ),
-              ],
-            )
+            Icon(
+              Icons.construction,
+              size: 100,
+            ),
+            Text(
+              '공사중',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            ),
           ],
         ),
       ),

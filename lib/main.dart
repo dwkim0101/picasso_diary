@@ -17,9 +17,8 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Picasso Diary',
-      themeMode: ThemeMode.system,
-      darkTheme: ThemeData.dark(useMaterial3: true),
-
+      // themeMode: ThemeMode.system,
+      // darkTheme: ThemeData.dark(useMaterial3: true),
       theme: ThemeData(
         fontFamily: 'Noto_Serif_KR',
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),

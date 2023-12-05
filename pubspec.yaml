@@ -37,10 +37,12 @@ dependencies:
   cupertino_icons: ^1.0.2
   openai_dalle_wrapper: ^1.0.0
   firebase_core: ^2.15.1
-  cloud_firestore: ^4.9.1
-  easy_date_timeline: ^0.1.0
-  google_fonts: ^4.0.4
+  cloud_firestore: any
+  easy_date_timeline: ^1.0.2
   flutter_svg: ^2.0.7
+  http: ^0.13.6
+  flutter_spinkit: ^5.2.0
+  
 
 dev_dependencies:
   flutter_test:
@@ -68,6 +70,11 @@ flutter:
   assets:
     - assets/icons/Vector.svg
     - assets/imgs/img1.png
+    - assets/imgs/img2.png
+    - assets/imgs/img3.png
+    - assets/imgs/img4.png
+    - assets/imgs/img5.png
+    - assets/imgs/img6.png
     - assets/imgs/back2.jpeg
     - assets/imgs/image 1.png
     - assets/imgs/image 6.png
